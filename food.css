@@ -17,4 +17,8 @@ div.transbox p {
   font-weight: bold;
   color: #000000;
 }
-
+.fit {
+  max-width: 99%;
+  max-height: 99%;
+}
+<img class="fit" src="food.png">
