@@ -1,5 +1,6 @@
 body {
     background-image: url("food.jpg");
+    background-size: 300px 100px;
 }
 
 div.transbox {
