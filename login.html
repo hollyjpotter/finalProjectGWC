@@ -3,10 +3,15 @@
   <meta name="google-signin-client_id" content=478647482634-8eaa5oe16vmfl68infm522pa9eu3r6tm.apps.googleusercontent.com">
 </head>
 <body>
-  <div id="my-signin2"></div>
+  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>                                                                                                                      
+  <div id="my-signin2" data-onsuccess="onSignIn"></div>
   <script>
-    function onSuccess(googleUser) {
-      console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    function onSignIn(googleUser) {
+      var profile = googleUser.getBasicProfile():
+      console.log('ID: ' + profile.getId()); // Do not send to backend, us ID token
+      console.log('Name: ' + profile.getName());
+      console.log('Image URL: ' + profile.getImageUrl());
+      console.log('Email: ' + profile.getEmail()); // null if email scope is not present                                          
     }
     function onFailure(error) {
       console.log(error);
@@ -24,6 +29,5 @@
     }
   </script>
 
-  <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
 </body>
 </html>
