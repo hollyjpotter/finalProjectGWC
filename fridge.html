@@ -7,10 +7,10 @@
 body {
     font-family: "Lato", sans-serif;
     background-image: url("food.jpg");
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: cover;
 }
-    
+
 .sidenav {
     height: 100%;
     width: 160px;
@@ -55,7 +55,7 @@ body {
 
 .button:hover {
     background-color: green;
-}    
+}
 </style>
     <div class="sidenav">
   <a class= "active" href="layout.html">Home</a>
@@ -69,17 +69,60 @@ body {
 <body class="main">
     <div class="background">
     <div class="transbox">
-  <h2>Your Fridge</h2>
+  <h2>    Your Fridge</h2>
   <p>You can enter the foods you have in your fridge and there expiration dates to get alerts for what dates they are best to be used by.</p>
-<center>
-  <button class="button" onclick="addFood()">Add Food</button>
-  <button class="button" onclick="create_table()">Show Fridge</button>  
-</center>
+
 <link
 rel="stylesheet"
 href="food.css">
 <style>
-    
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 15px;
+  width: 300px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+</style>
+
+
+
+<button class="button" onclick="addFood()"><span> Add Food </span></button>
+<button class="button" onclick="create_table()"><span> Show Fridge </span></button>
+<style>
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -108,7 +151,7 @@ div.transbox p {
   font-weight: bold;
   color: #000000;
 }
-    
+
 </style>
         <center>
 <table>
