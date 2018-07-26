@@ -6,3 +6,12 @@ function onSignIn(googleUser)
     $("#pic").attr('scr',profile.getImageUrl());
     $("#email").text(profile.getEmail());
 }
+function signOut {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function() {
+            alert("You have successfully been signed out.");
+            $(".g-signin2").css("display","block");
+            $(".data").css("display","none");
+    
+    });
+}
