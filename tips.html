@@ -21,7 +21,7 @@
             background-color: #111;
             overflow-x: hidden;
             padding-top: 20px;
-            opacity: 0.9;
+            opacity: 0.6;
             filter: alpha(opacity=60); /* For IE8 and earlier */
         }
         .sidenav a {
@@ -66,7 +66,7 @@
       <a class= "active" href="layout.html">Home</a>
       <a class= "active" href="calendar.html">Your Calendar</a>
       <a class= "active" href="fridge.html">Fridge</a>
-      <a class= "active" href="donations.html">Donation</a>
+      <a class= "active" href="donation.html">Donation</a>
       <a class= "active" href="tips.html">Tips</a>
       <a class= "active" href="aboutus.html">About Us</a>
       <a class= "active" href="sources.html">Sources</a>
@@ -78,6 +78,92 @@
         </p>
       <p>Welcome to our website, here we help you track your food expiration dates</p>
     </div>
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+  <background="calorie.jpg">
+
+<h1>Tips & Tricks</h1>
+
+<button class="collapsible">Grains:</button>
+<div class="content">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<button class="collapsible">Milk:</button>
+<div class="content">
+  <p>When milk is expired it will emite an strange odor if not its best to make sure it is safe to drink.</p>
+  <p>You can boil 1/2 of milk if it curdles and becomes a cheese texture throw it away.</p>
+  <p>
+    <img src="expired.jpg" alt="Trulli" width="250" height="200">
+  </p>
+</div>
+<button class="collapsible">Protien:</button>
+<div class="content">
+  <p> If you have eggs in no carton ,it can be difficult to know if they are expired.</p>
+  <p>Therfore you can place one egg (Don't Crack!)in a clear cup filled with water. If the egg floats it is expired or spoiled,
+    however if it sinks it is a very fresh egg.
+
+  <p>
+    <img src="egg.jpg" alt="Trulli" width="250" height="200">
+  </p>
+</div>
+<button class="collapsible">Vegtebales & Fruits:</button>
+<div class="content">
+  <p>When vegtebales expire they mold or have a bad odor to prevent vegetables from expiring qucikly you can preserve it by drying your vegetables.</p>
+  <p>Another thing you can do to preserve your food is blanching wich is light bowling of you fruits and vegetbles. The procces of blanching destroys enzymes that causes the vegetables and fruits to deteriorate.
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+</script>
+
+</body>
+</html>
 
 
 </body>
