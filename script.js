@@ -2,6 +2,16 @@ var fridge = [];
 var date = [];
 var days = [];
 
+function calendar() {
+
+  // page is now ready, initialize the calendar...
+
+  $('#calendar').fullCalendar({
+    // put your options and callbacks here
+  })
+
+};
+
 function addFood(){
   var food = prompt("Type the name of the food you want to add");
   var date2 = prompt("Type the dat that food expires");
