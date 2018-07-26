@@ -5,11 +5,11 @@ var days = [];
 function calendar() {
 
   // page is now ready, initialize the calendar...
-    document.getElementById("calendar").innerHTML = "It has been reached";
+    //document.getElementById("calendar").innerHTML = "It has been reached";
 
-//   $('#calendar').fullCalendar({
-//     // put your options and callbacks here
-//   })
+  $('#calendar').fullCalendar({
+    // put your options and callbacks here
+  })
 
 };
 
