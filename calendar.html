@@ -12,15 +12,15 @@ rel="stylesheet"
 href="food.css">
 
 <script>
-  $(function() {
+$(function() {
 
-    // page is now ready, initialize the calendar...
+  // page is now ready, initialize the calendar...
 
-    $('#calendar').fullCalendar({
-      // put your options and callbacks here
-    })
+  $('#calendar').fullCalendar({
+    // put your options and callbacks here
+  })
 
-  });
+});
 </script>
 
 <style>
@@ -37,7 +37,7 @@ body {
     background-color: #111;
     overflow-x: hidden;
     padding-top: 20px;
-    opacity: 0.9;
+    opacity: 0.6;
     filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 .sidenav a {
@@ -58,6 +58,20 @@ body {
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: right;
+    padding: 20px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
 }
 </style>
 </head>
@@ -83,29 +97,11 @@ body {
 
 
 <style>
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 90%;
-}
 
-td, th {
-    border: 1px solid #A1D490;
-    text-align: right;
-    padding: 10px;
-}
-
-tr:nth-child(even) {
-    background-color: #A1D490;
-    width: 10px;
-    height: 1px
-}
 </style>
-</head>
 
     </div>
   </div>
 
 </body>
 </html>
-
