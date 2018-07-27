@@ -20,17 +20,13 @@
   		<script>
     			function onSuccess(googleUser) {
       			console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
- 			if true {
-				window.open('https://hollyjpotter.github.io/finalProjectGWC/layout.html');
 			}
-			}
-// 			function mainPage {
-//   				if onSuccess
-//   					window.open("https://hollyjpotter.github.io/finalProjectGWC/layout.html")
-//       			}
+ 			function mainPage {
+   				if onSuccess == True
+   					window.open("https://hollyjpotter.github.io/finalProjectGWC/layout.html")
+       			}
     			function onFailure(error) {
       			console.log(error);
-				window.open('https://hollyjpotter.github.io/finalProjectGWC/layout.html');
     			}
     			function renderButton() {
       			gapi.signin2.render('my-signin2', {
