@@ -22,8 +22,13 @@
       			console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
 // 			window.open('https://hollyjpotter.github.io/finalProjectGWC/layout.html');
     			}
+// 			function mainPage {
+//   				if onSuccess
+//   					window.open("https://hollyjpotter.github.io/finalProjectGWC/layout.html")
+//       			}
     			function onFailure(error) {
       			console.log(error);
+				window.open('https://hollyjpotter.github.io/finalProjectGWC/layout.html');
     			}
     			function renderButton() {
       			gapi.signin2.render('my-signin2', {
@@ -35,10 +40,6 @@
         			'onsuccess': onSuccess,
         			'onfailure': onFailure
       			});
-//  			function mainPage {
-//  				if onSuccess == "True"
-//  					window.open("https://hollyjpotter.github.io/finalProjectGWC/layout.html")
-//      			}
 			}
   		</script>
 		<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
