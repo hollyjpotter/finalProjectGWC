@@ -1,43 +1,46 @@
-<html lang="en">
-  <head>
-    <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content=873058978722-smp1sb8lhbn3v7v7655ec569nj8q6rsd.apps.googleusercontent.com>
-    <script src="https://apis.google.com/js/platform.js" async defer></script>
-    <script scr="login.js"></script>
-    <style>
-      g-signin2 {
-          margin-left: 500px;
-          margin-top: 200px;
-      }
-      .data {
-          display: none;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
-    <div class="data">
-      <p>Profile Details</p>
-      <img id="pic" class="img-circle" width="100" height="100"/>
-      <p>Email Address</p>
-      <p id="email" class="alert alert-danger"></p>
-      <button onclick="signOut()" class="btn btn-danger">Sign Out</button>
-    </div>
-    <script>
-      function onSignIn(googleUser) {
-        // Useful data for your client-side scripts:
-        var profile = googleUser.getBasicProfile();
-        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-        console.log('Full Name: ' + profile.getName());
-        console.log('Given Name: ' + profile.getGivenName());
-        console.log('Family Name: ' + profile.getFamilyName());
-        console.log("Image URL: " + profile.getImageUrl());
-        console.log("Email: " + profile.getEmail());
+<!DOCTYPE html>
 
-        // The ID token you need to pass to your backend:
-        var id_token = googleUser.getAuthResponse().id_token;
-        console.log("ID Token: " + id_token);
-      };
-    </script>
-  </body>
+<html>
+	<head>
+		<meta name="google-signin-client_id" content=873058978722-smp1sb8lhbn3v7v7655ec569nj8q6rsd.apps.googleusercontent.com>
+		<meta charset="UTF-8">
+		<title>Log In</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fontawesome.com/v4.7.0/icon/user-o" rel="stylesheet">
+		<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Add font awesome icons -->
+<a href="https://www.instagram.com/hollyjpotter/?hl=en" class="fa fa-instagram"></a>
+	</head>
+	<body>
+		<div class="loginBox">
+		<div class="glass">
+  		 	<div id="my-signin2">
+			</div>
+			<a href="format.html"><"my-signin2"></div>
+  		<script>
+    			function onSuccess(googleUser) {
+      			console.log('Logged in as: ' + googleUser.getBasicProfile().getName());
+    			}
+    			function onFailure(error) {
+      			console.log(error);
+    			}
+    			function renderButton() {
+      			gapi.signin2.render('my-signin2', {
+        			'scope': 'profile email',
+        			'width': 240,
+        			'height': 50,
+        			'longtitle': true,
+        			'theme': 'dark',
+        			'onsuccess': onSuccess,
+        			'onfailure': onFailure
+      			});
+    			}
+  		</script>
+		<script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>
+		</div>
+		</div>
+					
+	</body>
 </html>
