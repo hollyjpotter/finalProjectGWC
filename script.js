@@ -20,7 +20,7 @@ var dict = {
   'tomatoes': 7,
   'peppers': 7,
   'crackers': 60,
-  'mayonnaise': 77
+  'mayonnaise': 77,
   'herbs': 180,
   'meat': 4
 };
