@@ -4,8 +4,25 @@ var days = [];
 
 
 var dict = {
-  'apple': 1,
-  'banana': 6
+  'banana': 6,
+  'milk': 7,
+  'butter': 14,
+  'yogurt': 30,
+  'bacon': 7,
+  'eggs': 21,
+  'fish': 2,
+  'melon': 7,
+  'broccoli': 4,
+  'mushrooms': 4,
+  'green beans': 4,
+  'cabbage': 7,
+  'celery': 7,
+  'tomatoes': 7,
+  'peppers': 7,
+  'crackers': 60,
+  'mayonnaise': 77
+  'herbs': 180,
+  'meat': 4
 };
 
 function addFood(){
