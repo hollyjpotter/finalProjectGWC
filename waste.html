@@ -11,8 +11,59 @@
             style="width:100%;";
             background-repeat: no-repeat; 
             background-size: cover;
+            background-attachment: fixed
         }
- 
+           
+        img{
+             max-width:100%;
+        }
+        
+        a { color:black } /* Globally */
+
+            /* Each state */
+
+            a:visited { text-decoration: none; color:black; }
+            a:hover { text-decoration: none; color:black; }
+            a:focus { text-decoration: none; color:black; }
+            a:hover, a:active { text-decoration: none; color:black }
+        
+        
+        * {
+             box-sizing: border-box;
+           }
+        
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        .button3 {background-color: #f44336;}
+        
+        .boxes{
+          width:50%;
+          float:left;
+        }
+        
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
         .sidenav {
             height: 100%;
             width: 160px;
@@ -64,20 +115,30 @@
     </div>
       
     <div class="main">
-      <p>
         <h2>Data on waste in America</h2>
-      </p>
-      <div class="row">
+     </div>
+     <div class="row">
         <div class="column">
-          <img src="wasteFood1.jpg" height="400" width="400" style="width:100%">
+        <!-- <img src="wasteFood1.jpg" style="width:80%"> -->
         </div>
         <div class="column">
-          <img src="wasteFood3.jpg" style="width:100%">
+            <img src="wasteFood2.jpg" style="width:80%">
         </div>
         <div class="column">
-          <img src="wasteFood2.jpg" style="width:100%">
+            <img src="wasteFood3.jpg" style="width:80%">
+         </div>
         </div>
-      </div>
+        <div class="row">
+        <div class="column">
+        </div>
+        <div class="column">
+            <img src="wasteFood1.jpg" style="width:80" align="middle">
+        </div>
+        <div class="column">
+        <h3><u>Articles:</u></h3>
+         <p><button class="button button3"><a href="https://www.theatlantic.com/business/archive/2016/07/american-food-waste/491513/"target="_blank">Article 1</button></p>
+         <p><button class="button button3"><a href="http://news.blogs.cnn.com/2012/08/22/40-of-u-s-food-wasted-report-says/"target="_blank">Article 2</button></p>
+     </div>
 </body>
 </head>   
 </html>
