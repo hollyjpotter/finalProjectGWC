@@ -1,144 +1,145 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    background-image: url("food.jpg");
+    style="width:100%;";
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed
+}
 
-    <style>
-        body {
-            font-family: "Lato", sans-serif;
-            background-image: url("food.jpg");
-            style="width:100%;";
-            background-repeat: no-repeat; 
-            background-size: cover;
-            background-attachment: fixed
-        }
-           
-        img{
-             max-width:100%;
-        }
-        
-        a { color:black } /* Globally */
+img{
+  max-width:100%;
+}
 
-            /* Each state */
+a { color:black } /* Globally */
 
-            a:visited { text-decoration: none; color:black; }
-            a:hover { text-decoration: none; color:black; }
-            a:focus { text-decoration: none; color:black; }
-            a:hover, a:active { text-decoration: none; color:black }
-        
-        
-        * {
-             box-sizing: border-box;
-           }
-        
-        .button {
-            background-color: #4CAF50; /* Green */
-            border: none;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            margin: 4px 2px;
-            cursor: pointer;
-        }
+/* Each state */
 
-        .button3 {background-color: #f44336;}
-        
-        .boxes{
-          width:50%;
-          float:left;
-        }
-        
-        .column {
-            float: left;
-            width: 33.33%;
-            padding: 5px;
-        }
-        
-        .row::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-        
-        .sidenav {
-            height: 100%;
-            width: 160px;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #111;
-            overflow-x: hidden;
-            padding-top: 20px;
-            opacity: 0.9;
-            filter: alpha(opacity=60); /* For IE8 and earlier */
-        }
+a:visited { text-decoration: none; color:black; }
+a:hover { text-decoration: none; color:black; }
+a:focus { text-decoration: none; color:black; }
+a:hover, a:active { text-decoration: none; color:black }
 
-        .sidenav a {
-            padding: 6px 8px 6px 16px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #818181;
-            display: block;
-        }
+* {
+    box-sizing: border-box;
+}
 
-        .sidenav a:hover {
-            color: #f1f1f1;
-        }
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
 
-        .main {
-            margin-left: 160px; /* Same as the width of the sidenav */
-            font-size: 28px; /* Increased text to enable scrolling */
-            padding: 0px 10px;
-        }
+.button3 {background-color: #f44336;}
 
-        @media screen and (max-height: 450px) {
-            .sidenav {padding-top: 15px;}
-            .sidenav a {font-size: 18px;}
-        }
-    </style>
-    <body class="main">
-  <div class="background">
+.boxes{
+  width:50%;
+  float:left;
+}
+/* #mainDiv{
+  width:50%;
+margin:auto;
+} */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    opacity: 0.9;
+    filter: alpha(opacity=60);
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
   <div class="sidenav">
-      <a class= "active" href="layout.html">Home</a>
-      <a class= "active" href="calendar.html">Your Calendar</a>
-      <a class= "active" href="fridge.html">Fridge</a>
-      <a class= "active" href="waste.html">Waste</a>
-      <a class= "active" href="donation.html">Donation</a>
-      <a class= "active" href="tips.html">Tips</a>
-      <a class= "active" href="aboutus.html">About Us</a>
-      <a class= "active" href="sources.html">Sources</a>
-    </div>
-      
-    <div class="main">
-        <h2>Data on waste in America</h2>
-     </div>
-     <div class="row">
-        <div class="column">
-        <!-- <img src="wasteFood1.jpg" style="width:80%"> -->
-        </div>
-        <div class="column">
-            <img src="wasteFood2.jpg" style="width:80%">
-        </div>
-        <div class="column">
-            <img src="wasteFood3.jpg" style="width:80%">
-         </div>
-        </div>
-        <div class="row">
-        <div class="column">
-        </div>
-        <div class="column">
-            <img src="wasteFood1.jpg" style="width:80" align="middle">
-        </div>
-        <div class="column">
-        <h3><u>Articles:</u></h3>
-         <p><button class="button button3"><a href="https://www.theatlantic.com/business/archive/2016/07/american-food-waste/491513/"target="_blank">Article 1</button></p>
-         <p><button class="button button3"><a href="http://news.blogs.cnn.com/2012/08/22/40-of-u-s-food-wasted-report-says/"target="_blank">Article 2</button></p>
-     </div>
+    <a class= "active" href="layout.html">Home</a>
+         <a class= "active" href="calendar.html">Your Calendar</a>
+         <a class= "active" href="fridge.html">Fridge</a>
+         <a class= "active" href="waste.html">Waste</a>
+         <a class= "active" href="donation.html">Donation</a>
+         <a class= "active" href="tips.html">Tips</a>
+         <a class= "active" href="aboutus.html">About Us</a>
+         <a class= "active" href="sources.html">Sources</a>
+  </div>
+
+<div class="main">
+  <h2><u>Data On Waste In America</u></h2>
+</div>
+<div class="row">
+  <div class="column">
+    <!-- <img src="wasteFood1.jpg" style="width:80%"> -->
+  </div>
+  <div class="column">
+    <img src="wasteFood2.jpg" style="width:80%">
+  </div>
+  <div class="column">
+    <img src="wasteFood3.jpg" style="width:80%">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+  </div>
+  <div class="column">
+    <img src="wasteFood1.jpg" style="width:80" align="middle">
+  </div>
+  <div class="column">
+    <h3><u>Articles:</u></h3>
+    <p><button class="button button3"><a href="https://www.theatlantic.com/business/archive/2016/07/american-food-waste/491513/"target="_blank">Article 1</button></p>
+    <p><button class="button button3"><a href="http://news.blogs.cnn.com/2012/08/22/40-of-u-s-food-wasted-report-says/"target="_blank">Article 2</button></p>
+  </div>
 </body>
-</head>   
 </html>
+
+
