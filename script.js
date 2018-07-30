@@ -28,7 +28,9 @@ var dict = {
 
 var dict_recipe = {
   'tomato': 'kethcup',
-  'tomato, butter, onion': "tomato soup".link("https://www.inspiredtaste.net/27956/easy-tomato-soup-recipe/")
+  'tomato, butter, onion': "tomato soup".link("https://www.inspiredtaste.net/27956/easy-tomato-soup-recipe/"),
+  'chicken, lemon': "lemon chicken".link("https://thestayathomechef.com/easy-lemon-chicken/"),
+  'chicken, celary, egg noodles' : "chicken noodle soup".link("https://www.allrecipes.com/recipe/26460/quick-and-easy-chicken-noodle-soup/")
 }
 
 function addFood(){
