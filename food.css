@@ -4,6 +4,21 @@ body {
     background-size: 100%;
 }
 
+
+.calendar {
+  background-color: #6FCF4C;
+  color: black;
+  float:left;
+  margin-left: -10px;
+  margin-top: -50px;
+  margin-right: 2000px;
+  margin-bottom: 40px;
+  width: 340px;
+  height: 120px;
+  padding: 10px;
+  overflow: auto;
+}
+
 .fridge {
   background-color: #6FCF4C;
   color: black;
@@ -22,25 +37,25 @@ body {
   background-color: #6FCF4C;
   color: black;
   float:left;
-  margin-left: -10px;
-  margin-top: -50px;
+  margin-left: -25px;
+  margin-top: -40px;
   margin-right: 2000px;
   margin-bottom: 40px;
-  width: 640px;
-  height: 120px;
+  width: 600px;
+  height: 160px;
   padding: 10px;
   overflow: auto;
 }
 
-.calendar {
+.donations {
   background-color: #6FCF4C;
   color: black;
   float:left;
   margin-left: -10px;
-  margin-top: -50px;
+  margin-top: -30px;
   margin-right: 2000px;
   margin-bottom: 40px;
-  width: 340px;
+  width: 250px;
   height: 120px;
   padding: 10px;
   overflow: auto;
@@ -59,6 +74,7 @@ body {
   padding: 10px;
   overflow: auto;
 }
+
 
 /* div.transbox {
   margin: 25px;
