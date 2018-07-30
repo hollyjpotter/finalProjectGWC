@@ -33,6 +33,19 @@ var dict_recipe = {
   'chicken, celary, egg noodles' : "chicken noodle soup".link("https://www.allrecipes.com/recipe/26460/quick-and-easy-chicken-noodle-soup/")
 }
 
+
+  function calendar() {
+  
+    // page is now ready, initialize the calendar...
+    //document.getElementById("calendar").innerHTML = "It has been reached";
+  
+    $('#calendar').fullCalendar({
+      // put your options and callbacks here
+  
+    })
+  
+  };
+
 function addFood(){
   var food = prompt("Type the name of the food you want to add");
   var date2 = prompt("Type the date that food expires", "M/D/YY or idk");
