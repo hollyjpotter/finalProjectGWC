@@ -2,6 +2,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="food.css">
 
     <style>
         body {
@@ -55,7 +56,6 @@
             font-weight: bold;
             color: #000000;
          }
-
          .collapsible {
              background-color: #777;
              color: white;
@@ -67,11 +67,9 @@
              outline: none;
              font-size: 15px;
          }
-
          .collapsible:hover {
              background-color: #555;
          }
-
          .content {
              padding: 18px;
              display: none;
@@ -80,6 +78,7 @@
          }
     </style>
 </head>
+
 
 <body class="main">
   <div class="background">
@@ -94,7 +93,9 @@
       <a class= "active" href="login.html">Log In</a>
     </div>
   <background="calorie.jpg">
-<h1>Tips and Tricks</h1>
+<div class="tips">
+<h2>Tips and Tricks</h2>
+</div>
 
 <button class="collapsible"><b>Grains</b></button>
         <div class="content">
@@ -127,13 +128,12 @@
     <p>- Wrap broccoli in a damp paper towel to make it last longer</p>
     <p>- Store celery in tin foil instead of plastic to extend its expiration date</p>
     <p>- Stick asparagus in a glass with a half-inch of water to extend its life</p>
-    
+
       </div>
 
 <script>
 var coll = document.getElementsByClassName("collapsible");
 var i;
-
 for (i = 0; i < coll.length; i++) {
     coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
