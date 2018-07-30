@@ -3,6 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src = "script.js"> </script>
+<link rel="stylesheet" href="food.css">
 <style>
 body {
     font-family: "Lato", sans-serif;
@@ -56,31 +57,7 @@ body {
 .button:hover {
     background-color: green;
 }
-</style>
-    <div class="sidenav">
-      <a class= "active" href="layout.html">Home</a>
-      <a class= "active" href="calendar.html">Your Calendar</a>
-      <a class= "active" href="fridge.html">Fridge</a>
-      <a class= "active" href="waste.html">Waste</a>
-      <a class= "active" href="donations.html">Donation</a>
-      <a class= "active" href="recipe.html">Recipe</a>
-      <a class= "active" href="tips.html">Tips</a>
-      <a class= "active" href="aboutus.html">About Us</a>
-      <a class= "active" href="login.html">Log In</a>
-
-    </div>
-</head>
-<body class="main">
-  
-    <div class="background">
-  
-  <h2>    Your Fridge</h2>
-  <p>You can enter the foods you have in your fridge and there expiration dates to get alerts for what dates they are best to be used by.</p>
-
-<link
-rel="stylesheet"
-href="food.css">
-<style>
+    
 .button {
   border-radius: 4px;
   background-color: #f4511e;
@@ -119,13 +96,7 @@ href="food.css">
   opacity: 1;
   right: 0;
 }
-</style>
-
-  <center>
-    <button class="button" onclick="addFood()"><span> Add Food </span></button>
-    <button class="button" onclick="create_table()"><span> Show Fridge </span></button>
-  </center>
-<style>
+    
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
@@ -143,6 +114,31 @@ tr:nth-child(even) {
 }
 
 </style>
+    <div class="sidenav">
+      <a class= "active" href="layout.html">Home</a>
+      <a class= "active" href="calendar.html">Your Calendar</a>
+      <a class= "active" href="fridge.html">Fridge</a>
+      <a class= "active" href="waste.html">Waste</a>
+      <a class= "active" href="donations.html">Donation</a>
+      <a class= "active" href="recipe.html">Recipe</a>
+      <a class= "active" href="tips.html">Tips</a>
+      <a class= "active" href="aboutus.html">About Us</a>
+      <a class= "active" href="login.html">Log In</a>
+
+    </div>
+</head>
+<body class="main">
+  
+    <div class="background">
+  
+  <h2>    Your Fridge</h2>
+  <p>You can enter the foods you have in your fridge and there expiration dates to get alerts for what dates they are best to be used by.</p>
+
+  <center>
+    <button class="button" onclick="addFood()"><span> Add Food </span></button>
+    <button class="button" onclick="create_table()"><span> Show Fridge </span></button>
+  </center>
+
         <center>
 <table>
   <tr>
