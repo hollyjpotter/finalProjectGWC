@@ -1,87 +1,89 @@
 <!DOCTYPE html>
-<html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
 
-    <style>
-        h1 {
-            font-size: 100 px;
-        }
-        secondharvest.jpeg {
-                             border-radius: 25px;
-                             background: #73AD21;
-                             padding: 20px; 
-                             width: 200px;
-                             height: 150px; 
-                             opacity: 1
-                      }
         body {
-            font-family: "Lato", sans-serif;
-            background-image: url("food.jpg");
-            style="width:100%;";
-            background-repeat: no-repeat; 
-            background-size: cover;
-        }
-        .sidenav {
-            height: 100%;
-            width: 160px;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #111;
-            overflow-x: hidden;
-            padding-top: 20px;
-            opacity: 0.9;
-            filter: alpha(opacity=70); /* For IE8 and earlier */
-        }
-        .sidenav a {
-            padding: 6px 8px 6px 16px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #818181;
-            display: block;
-        }
-        .sidenav a:hover {
-            color: #f1f1f1;
-        }
-        .main {
-            margin-left: 160px; /* Same as the width of the sidenav */
-            font-size: 28px; /* Increased text to enable scrolling */
-            padding: 0px 10px;
-        }
-        @media screen and (max-height: 450px) {
-            .sidenav {padding-top: 15px;}
-            .sidenav a {font-size: 18px;}
-        }
-    </style>
-    
+           font-family: "Lato", sans-serif;
+           background-image: url("food.jpg");
+           style="width:100%;";
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-attachment: fixed
+       }
+
+       div.ex1 {
+         width:1200px;
+       }
+       .sidenav {
+           height: 100%;
+           width: 160px;
+           position: fixed;
+           z-index: 1;
+           top: 0;
+           left: 0;
+           background-color: #111;
+           overflow-x: hidden;
+           padding-top: 20px;
+           opacity: 0.9;
+           filter: alpha(opacity=60); /* For IE8 and earlier */
+       }
+      .sidenav a {
+          padding: 6px 8px 6px 16px;
+          text-decoration: none;
+          font-size: 25px;
+          color: #818181;
+          display: block;
+       }
+       .sidenav a:hover {
+          color: #f1f1f1;
+       }
+       .main {
+           margin-left: 160px; /* Same as the width of the sidenav */
+           font-size: 28px; /* Increased text to enable scrolling */
+           padding: 0px 10px;
+       }
+       @media screen and (max-height: 450px) {
+           .sidenav {padding-top: 15px;}
+           .sidenav a {font-size: 18px;}
+       }
+      </style>
 </head>
-    
 <body class="main">
-  <div class="background">
-  <div class="transbox">
     <div class="sidenav">
       <a class= "active" href="layout.html">Home</a>
       <a class= "active" href="calendar.html">Your Calendar</a>
       <a class= "active" href="fridge.html">Fridge</a>
-      <a class= "active" href="waste.html">Waste</a>
-      <a class= "active" href="donations.html">Donation</a>
+      <a class= "active" href="donation.html">Donation</a>
       <a class= "active" href="tips.html">Tips</a>
       <a class= "active" href="aboutus.html">About Us</a>
       <a class= "active" href="login.html">Log In</a>
     </div>
-
-    <div class="main">
-      <p>
-        <h1>Donations</h1>
-        </p>
-      <p>From here you can find out more on how you can help prevent food waste and donate to foundations, such as food banks, which were created to help people in need.</p>
-      <div><h2>Where to Donate</h2></div>
-      
-      <div id="googleMap" style="width:100%;height:400px;"></div>
-      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQK64x3-nDvJtTRwX_d2cIxeJsr9pj7A8&callback=myMap"></script>
-
+<h1><u>Donations</u></h1>
+  <div>
+    <div class="ex1" style="position:fixed; left:200px; top:172px; background-color:grey;">
+      <font size="5">From here you can find out more on how you can help prvent food waste and donate to foundations, such as food banks or shelters, which were created to help people in need.</font>
+  </div>
+  <div class="ex1" style="position:fixed; left:200px; top:236px; background-color:grey;">
+      <font size="6"><u>Food Banks:</u></font>
+  </div>
+  <div class="ex1" style="position:fixed; left:200px; top:270px; background-color:lightgrey;">
+      <font size="4"><p>A food bank is a non-profit, charitable organization that distributes food to those who have difficulty pusrchasing enough to avoid hunger. With food banks you are able to donate food to those who can't obtain while not wasting food. One well known food bank is Feeding America</p>
+      <p><img src="FeedAmerica.jpg" style="width:20%"></p></font>
+  </div>
+  <div class="ex1" style="position:fixed; left:200px; top:509px; background-color:grey;">
+      <font size="6"><u>Food To Bring:</u></font>
+  </div>
+  <div class="ex1" style="position:fixed; left:200px; top:545px; background-color:lightgrey;">
+      <font size="4"><p>There are certain food that most food banks are asking for.</p>
+      <p>Some of those certain foods are: Apple, Canned Beans, Canned Chicken, Canned Fish(Tuna and Salmon), Canned Meat(SPAM and Ham), Canned Vegetables, Cooking Oils(Olive and Canola), Crackers, Dried Herbs, Spices, Fruit(Canned or Dried), Granonal Bars ect.</p>
+  </div>
+  <div class="ex1" style="position:fixed; left:200px; top:655px; background-color:grey;">
+      <font size="6"><u>Volunteer:</u></font>
+  </div>
+  <div class="ex1" style="position:fixed; left:200px; top:690px; background-color:lightgrey;">
+      <font size="4"><p>Even if you don't have food to donate you can always volunteer at your nearest shelter to distribute food to the homeless.</p>
+  </div>
 </body>
-    
 </html>
+
