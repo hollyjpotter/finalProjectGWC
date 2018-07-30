@@ -4,7 +4,19 @@ body {
     background-size: 100%;
 }
 
-div.transbox {
+.fridge {
+  background-color: #6FCF4C;
+  color: black;
+  float:left;
+  margin-left: 10px;
+  margin-top: -50px;
+  width: 25%;
+  height: 120px;
+  padding: 10px;
+  overflow: auto;
+}
+
+/* div.transbox {
   margin: 25px;
   background-color: #ffffff;
   border: 1px solid black;
@@ -12,11 +24,11 @@ div.transbox {
   filter: alpha(opacity=60); /* For IE8 and earlier */
 }
 
-div.transbox p {
+/*div.transbox p {
   margin: 5%;
   font-weight: bold;
   color: #000000;
-}
+} */
 .fit {
   max-width: 99%;
   max-height: 99%;
