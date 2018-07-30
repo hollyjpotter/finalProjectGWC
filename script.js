@@ -23,7 +23,13 @@ var dict = {
   'mayonnaise': 77,
   'herbs': 180,
   'meat': 4
-};
+}
+
+
+var dict_recipe = {
+  'tomato': 'kethcup',
+  'tomato, butter, onion': "tomato soup".link("https://www.inspiredtaste.net/27956/easy-tomato-soup-recipe/")
+}
 
 function addFood(){
   var food = prompt("Type the name of the food you want to add");
@@ -65,4 +71,17 @@ function create_table(){
     table += '</tr>';
   }
   document.getElementById("tab").innerHTML = ('<table>' + table + '</table>')
+}
+
+
+
+
+
+function makeRecipe(){
+  var cat = prompt("Type the food you have");
+  for (var key in dict_recipe){
+    if (cat == key){
+      document.getElementById("recip").innerHTML = (dict_recipe[key]);
+    }
+  }
 }
