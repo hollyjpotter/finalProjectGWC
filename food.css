@@ -61,6 +61,20 @@ body {
   overflow: auto;
 }
 
+.recipes {
+  background-color: #6FCF4C;
+  color: black;
+  float:left;
+  margin-left: -10px;
+  margin-top: -40px;
+  margin-right: 2000px;
+  margin-bottom: 40px;
+  width: 200px;
+  height: 120px;
+  padding: 10px;
+  overflow: auto;
+}
+
 .tips {
   background-color: #6FCF4C;
   color: black;
