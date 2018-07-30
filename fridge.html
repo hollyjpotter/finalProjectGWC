@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +12,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .sidenav {
     height: 100%;
     width: 160px;
@@ -53,11 +53,10 @@ body {
     font-size: 16px;
     cursor: pointer;
 }
-
 .button:hover {
     background-color: green;
 }
-    
+
 .button {
   border-radius: 4px;
   background-color: #f4511e;
@@ -71,14 +70,12 @@ body {
   cursor: pointer;
   margin: 5px;
 }
-
 .button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
-
 .button span:after {
   content: '\00bb';
   position: absolute;
@@ -87,32 +84,28 @@ body {
   right: -20px;
   transition: 0.5s;
 }
-
 .button:hover span {
   padding-right: 25px;
 }
-
 .button:hover span:after {
   opacity: 1;
   right: 0;
 }
-    
+
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 80%;
+    background-color: #D9EBD3;
 }
-
 td, th {
     border: 2px solid green;
     text-align: right;
     padding: 20px;
 }
-
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background-color: #D3E5EB;
 }
-
 </style>
     <div class="sidenav">
       <a class= "active" href="layout.html">Home</a>
@@ -128,13 +121,16 @@ tr:nth-child(even) {
     </div>
 </head>
 <body class="main">
-  
+
     <div class="background">
-  
+
   <div class="fridge">
   <h2>Your Fridge</h2>
   </div>
+
+
   <p>You can enter the foods you have in your fridge and there expiration dates to get alerts for what dates they are best to be used by.</p>
+
 
   <center>
     <button class="button" onclick="addFood()"><span> Add Food </span></button>
@@ -153,7 +149,8 @@ tr:nth-child(even) {
 </table>
         </center>
     </div>
-    </div>
+
 
 </body>
 </html>
+
