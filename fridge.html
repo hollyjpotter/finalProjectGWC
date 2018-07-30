@@ -1,8 +1,10 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src = "script.js"> </script>
+<link rel="stylesheet" href="food.css">
 <style>
 body {
     font-family: "Lato", sans-serif;
@@ -54,29 +56,7 @@ body {
 .button:hover {
     background-color: green;
 }
-</style>
-    <div class="sidenav">
-  <a class= "active" href="layout.html">Home</a>
-  <a class= "active" href="calendar.html">Your Calendar</a>
-  <a class= "active" href="fridge.html">Fridge</a>
-  <a class="active" href="waste.html">Waste</a>
-  <a class= "active" href="donations.html">Donation</a>
-  <a class= "active" href="tips.html">Tips</a>
-  <a class= "active" href="aboutus.html">About Us</a>
-    </div>
-</head>
-<body class="main">
 
-    <div class="background">
-    <div class="transbox">
-
-  <h2>    Your Fridge</h2>
-  <p>You can enter the foods you have in your fridge and there expiration dates to get alerts for what dates they are best to be used by.</p>
-
-<link
-rel="stylesheet"
-href="food.css">
-<style>
 .button {
   border-radius: 4px;
   background-color: #f4511e;
@@ -111,17 +91,12 @@ href="food.css">
   opacity: 1;
   right: 0;
 }
-</style>
 
-  <center>
-    <button class="button" onclick="addFood()"><span> Add Food </span></button>
-    <button class="button" onclick="create_table()"><span> Show Fridge </span></button>
-  </center>
-<style>
 table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 80%;
+    background-color: #D9EBD3;
 }
 td, th {
     border: 2px solid green;
@@ -129,21 +104,39 @@ td, th {
     padding: 20px;
 }
 tr:nth-child(even) {
-    background-color: #dddddd;
-}
-div.transbox {
-  margin: 25px;
-  background-color: #ffffff;
-  border: 1px solid black;
-  opacity: 0.6;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
-}
-div.transbox p {
-  margin: 5%;
-  font-weight: bold;
-  color: #000000;
+    background-color: #D3E5EB;
 }
 </style>
+    <div class="sidenav">
+      <a class= "active" href="layout.html">Home</a>
+      <a class= "active" href="calendar.html">Your Calendar</a>
+      <a class= "active" href="fridge.html">Fridge</a>
+      <a class= "active" href="waste.html">Waste</a>
+      <a class= "active" href="donations.html">Donation</a>
+      <a class= "active" href="recipe.html">Recipe</a>
+      <a class= "active" href="tips.html">Tips</a>
+      <a class= "active" href="aboutus.html">About Us</a>
+      <a class= "active" href="login.html">Log In</a>
+
+    </div>
+</head>
+<body class="main">
+
+    <div class="background">
+
+  <div class="fridge">
+  <h2>Your Fridge</h2>
+  </div>
+
+
+  <p>You can enter the foods you have in your fridge and there expiration dates to get alerts for what dates they are best to be used by.</p>
+
+
+  <center>
+    <button class="button" onclick="addFood()"><span> Add Food </span></button>
+    <button class="button" onclick="create_table()"><span> Show Fridge </span></button>
+  </center>
+
         <center>
 <table>
   <tr>
@@ -156,60 +149,42 @@ div.transbox p {
 </table>
         </center>
     </div>
-    </div>
 
-<button onclick="exportTableToCSV('members.csv')">Convert Table To File</button>
+
+<button class="button" onclick="exportTableToCSV('members.csv')">Export HTML Table To CSV File</button>
 
 <script>
 function downloadCSV(csv, filename) {
     var csvFile;
     var downloadLink;
-
     // CSV file
     csvFile = new Blob([csv], {type: "text/csv"});
-
     // Download link
     downloadLink = document.createElement("a");
-
     // File name
     downloadLink.download = filename;
-
     // Create a link to the file
     downloadLink.href = window.URL.createObjectURL(csvFile);
-
     // Hide download link
     downloadLink.style.display = "none";
-
     // Add the link to DOM
     document.body.appendChild(downloadLink);
-
     // Click download link
     downloadLink.click();
-
 }
-
 function exportTableToCSV(filename) {
     var csv = [];
     var rows = document.querySelectorAll("table tr");
-
     for (var i = 0; i < rows.length; i++) {
         var row = [], cols = rows[i].querySelectorAll("td, th");
-
         for (var j = 0; j < cols.length; j++)
             row.push(cols[j].innerText);
-
         csv.push(row.join(","));
     }
-
     // Download CSV file
     downloadCSV(csv.join("\n"), filename);
 }
-
-
-
-
-
-
 </script>
 </body>
 </html>
+
