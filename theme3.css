@@ -1,5 +1,6 @@
 .cld-main{
   width: 660px;
+  background-color: #C5D2D6;
 }
 .cld-main a{
   color: green;
@@ -58,6 +59,7 @@
     height: 66px;
     border: 1px solid #ddd;
     overflow-y: auto;
+    background-color: #DBD0CC;
   }
   .cld-day.clickable:hover{
     cursor: pointer;
