@@ -1,96 +1,70 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<script src = "script.js"> </script>
-<script src='node_modules/jquery/dist/jquery.min.js'></script>
-<script src='node_modules/moment/min/moment.min.js'></script>
-<script src='node_modules/fullcalendar/dist/fullcalendar.js'></script>
+  <head>
+    <title>Hello</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <link rel="stylesheet" href="css/demo.css"/>
+    <link rel="stylesheet" href="css/theme3.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src = "script.js"> </script>
+    <link rel="stylesheet" href="food.css">
+    <style>
+    body {
+        font-family: "Lato", sans-serif;
+    }
+    .sidenav {
+        height: 100%;
+        width: 160px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+        opacity: 0.9;
+        filter: alpha(opacity=60); /* For IE8 and earlier */
+    }
+    .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+    }
+    .sidenav a:hover {
+        color: #f1f1f1;
+    }
+    .main {
+        margin-left: 160px; /* Same as the width of the sidenav */
+        font-size: 28px; /* Increased text to enable scrolling */
+        padding: 0px 10px;
+    }
+    @media screen and (max-height: 450px) {
+        .sidenav {padding-top: 15px;}
+        .sidenav a {font-size: 18px;}
+    }
+    
+    </style>
+  </head>
 
-<link
-rel="stylesheet"
-href="food.css">
-
-
-<style>
-body {
-    font-family: "Lato", sans-serif;
-}
-.sidenav {
-    height: 100%;
-    width: 160px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 20px;
-    opacity: 0.9;
-    filter: alpha(opacity=60); /* For IE8 and earlier */
-}
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-}
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-.main {
-    margin-left: 160px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
-}
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 80%;
-}
-td, th {
-    border: 1px solid #dddddd;
-    text-align: right;
-    padding: 20px;
-}
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-</style>
-</head>
-<body>
-
-<div class="sidenav">
-      <a class= "active" href="layout.html">Home</a>
-      <a class= "active" href="calendar.html">Your Calendar</a>
-      <a class= "active" href="fridge.html">Fridge</a>
-      <a class= "active" href="waste.html">Waste</a>
-      <a class= "active" href="donations.html">Donation</a>
-      <a class= "active" href="recipe.html">Recipe</a>
-      <a class= "active" href="tips.html">Tips</a>
-      <a class= "active" href="aboutus.html">About Us</a>
-      <a class= "active" href="login.html">Log In</a>
-
-</div>
+  <body>
+    <div class="sidenav">
+          <a class= "active" href="layout.html">Home</a>
+          <a class= "active" href="calendar.html">Your Calendar</a>
+          <a class= "active" href="fridge.html">Fridge</a>
+          <a class= "active" href="waste.html">Waste</a>
+          <a class= "active" href="donations.html">Donation</a>
+          <a class= "active" href="recipe.html">Recipe</a>
+          <a class= "active" href="tips.html">Tips</a>
+          <a class= "active" href="aboutus.html">About Us</a>
+          <a class= "active" href="login.html">Log In</a>
+    </div>
 
     <div class="background">
-
-
-<body class="main">
-  <div class="calendar">
-  <h2>Your Calendar</h2>
-  </div>
-  <p>This is your calendar with dates of expiration.</p>
-  <button onclick="calendar()">Calendar</button>
-  <p id='calendar'></p>
-
-
-  </div>
-
-</body>
+    <div id="caleandar"></div>
+    </div>
+    <script type="text/javascript" src="js/caleandar.js"></script>
+    <script type="text/javascript" src="js/demo.js"></script>
+  </body>
 </html>
