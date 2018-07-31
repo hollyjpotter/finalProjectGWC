@@ -32,7 +32,7 @@ var dict_recipe = {
   'chicken, lemon': "lemon chicken".link("https://thestayathomechef.com/easy-lemon-chicken/"),
   'chicken, celary, egg noodles' : "chicken noodle soup".link("https://www.allrecipes.com/recipe/26460/quick-and-easy-chicken-noodle-soup/"),
   'green bean' : "Buttery Garlic Green Beans".link("https://www.allrecipes.com/recipe/230103/buttery-garlic-green-beans/"),
-  'ground beef' : "40 Ground Beef Recipes".link("https://www.southernliving.com/food/whats-for-supper/ground-beef-recipes)
+  'ground beef' : "40 Ground Beef Recipes".link("https://www.southernliving.com/food/whats-for-supper/ground-beef-recipes")
 }
 
 
