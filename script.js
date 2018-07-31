@@ -32,7 +32,12 @@ var dict_recipe = {
   'chicken, lemon': "lemon chicken".link("https://thestayathomechef.com/easy-lemon-chicken/"),
   'chicken, celary, egg noodles' : "chicken noodle soup".link("https://www.allrecipes.com/recipe/26460/quick-and-easy-chicken-noodle-soup/"),
   'green bean' : "Buttery Garlic Green Beans".link("https://www.allrecipes.com/recipe/230103/buttery-garlic-green-beans/"),
-  'ground beef' : "40 Ground Beef Recipes".link("https://www.southernliving.com/food/whats-for-supper/ground-beef-recipes")
+  'ground beef' : "40 Ground Beef Recipes".link("https://www.southernliving.com/food/whats-for-supper/ground-beef-recipes"),
+  'carrot' : "20 Carrot Recipes".link("https://www.rachaelraymag.com/recipes/20-carrot-recipes"),
+  'bell pepper' : "25 Creative & Healthy Ways to Cook with Bell Peppers".link("https://paleogrubs.com/bell-pepper-recipes"),
+  'bell peppers' : "25 Creative & Healthy Ways to Cook with Bell Peppers".link("https://paleogrubs.com/bell-pepper-recipes"),
+  'apples' : "30 Essential Apple Recipes for Fall".link("https://www.thekitchn.com/30-must-make-apple-recipes-for-fall-223857"),
+  'apple' : "30 Essential Apple Recipes for Fall".link("https://www.thekitchn.com/30-must-make-apple-recipes-for-fall-223857")
 }
 
 
