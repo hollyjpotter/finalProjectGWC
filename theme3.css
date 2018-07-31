@@ -9,7 +9,8 @@
     position: relative;
     width: 66%;
     min-width: 100px;
-    max-width: 300px;
+    max-width: 400px;
+    height: 62px;
     margin: auto;
     overflow: hidden;
     font-size: 40px;
