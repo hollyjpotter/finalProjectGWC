@@ -56,7 +56,7 @@ var dict_recipe = {
 function addFood(){
   var food = prompt("Type the name of the food you want to add");
   var date2 = prompt("Type the date that food expires", "M/D/YY or idk");
-  var date1 = '7/26/2018';
+  var date1 = '8/2/2018';
   var i = fridge.length + 0;
   fridge.push(food);
 
